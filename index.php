@@ -7,6 +7,9 @@
 	/* EXECUTANDO FUNCAO getPagina*/
 	Rotas::getPagina();
 
+	/*BUSCAR PASTA TEMA */
+	$smarty->assign('TEMA', Rotas::getSiteTema());
+
 
 	/* EXIBINDO PAGINA SEMPRE FICARA POR ULTIMO*/
 	$smarty->display('index.tpl');
