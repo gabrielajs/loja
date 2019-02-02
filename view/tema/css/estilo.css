@@ -13,3 +13,16 @@
 .bg-caminho{
     background: none;
 }
+.group-header{
+	display: inline-flex;;
+	margin-left: 174px;
+}
+#btn-m-left{
+	margin-left: 15px;
+}
+#inp-search:focus {
+    box-shadow: none;
+}
+input#inp-search {
+    width: 330px;
+}

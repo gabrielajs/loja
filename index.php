@@ -4,12 +4,11 @@
 	require './lib/autoload.php';
 
 	$smarty = new Template();
-	/* EXECUTANDO FUNCAO getPagina*/
-	Rotas::getPagina();
-
+	
 	/*BUSCAR PASTA TEMA */
 	$smarty->assign('TEMA', Rotas::getSiteTema());
-
+	/*HOME DO SITE*/
+	$smarty->assign('HOME', Rotas::getSiteHome());
 
 	/* EXIBINDO PAGINA SEMPRE FICARA POR ULTIMO*/
 	$smarty->display('index.tpl');

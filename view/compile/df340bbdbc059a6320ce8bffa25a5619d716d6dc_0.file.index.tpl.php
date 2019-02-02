@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-31 22:20:53
+/* Smarty version 3.1.33, created on 2019-02-02 00:09:59
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c5374c5821510_94199682',
+  'unifunc' => 'content_5c54dfd7431c24_07787967',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1548973242,
+      1 => 1549066196,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c5374c5821510_94199682 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c54dfd7431c24_07787967 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,14 +40,27 @@ function content_5c5374c5821510_94199682 (Smarty_Internal_Template $_smarty_tpl)
 <body>
 <header class="">
   <div class="container pd-site">
-    <h5 class="text-uppercase">Nome do Site</h5>
+    <span class="text-uppercase">Nome do Site</span>
+    <form class="form-inline group-header">
+    	<div class="">
+    		<input type="text" class="form-control" id="inp-search" placeholder="Pesquisar">
+    	</div>
+    	<button type="button" class="btn btn-outline-success" id="btn-m-left">Pesquisar</button>
+    </form>
+    <div class="group-header">
+    	<a href="#" title="carrinho" id="icon-cart">
+			<img src="https://img.icons8.com/material/24/000000/shopping-cart.png">
+	    </a>
+	    <button type="button" class="btn btn-success" id="btn-m-left">Entrar</button>
+    </div>
   </div>
   <!-- INICIO MENU -->
   <nav class="navbar navbar-expand-lg navbar-light color-bg">
     <div class="collapse navbar-collapse container" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-color" href="#">Inicio</a>
+          <a class="nav-link text-color" href="<?php echo $_smarty_tpl->tpl_vars['HOME']->value;?>
+">Inicio</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-color" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -97,6 +110,10 @@ function content_5c5374c5821510_94199682 (Smarty_Internal_Template $_smarty_tpl)
             <li class="breadcrumb-item active" aria-current="page">Data</li>
         </ol>
       </div>
+
+      <?php 
+		Rotas::getPagina();
+      ?>
     </main>
   </div>
 </div>
