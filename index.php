@@ -7,11 +7,18 @@
 	
 	/*BUSCAR PASTA TEMA */
 	$smarty->assign('TEMA', Rotas::getSiteTema());
-	/*HOME DO SITE*/
+	/*PAGINA HOME DO SITE*/
 	$smarty->assign('HOME', Rotas::getSiteHome());
+	/*PAGINA CARRINHO*/
+	$smarty->assign('CARRINHO', Rotas::pageCarrinho());
+	/*PAGINA CONTATO*/
+	$smarty->assign('CONTATO', Rotas::pageContato());
+
+
+
+
+
 
 	/* EXIBINDO PAGINA SEMPRE FICARA POR ULTIMO*/
 	$smarty->display('index.tpl');
-
-
-
+?>

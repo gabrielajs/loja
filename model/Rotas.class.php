@@ -42,5 +42,10 @@ Class Rotas{
 	static function pageCarrinho(){
 		return self::getSiteHome() . '/carrinho';
 	}
+
+	/* PAGINA CONTATO*/
+	static function pageContato(){
+		return self::getSiteHome() . '/contato';
+	}
 }
 ?>

@@ -19,10 +19,10 @@
     	<button type="button" class="btn btn-outline-success" id="btn-m-left">Pesquisar</button>
     </form>
     <div class="group-header">
-    	<a href="#" title="carrinho" id="icon-cart">
+    	<a href="{$CARRINHO}" title="carrinho" id="icon-cart">
 			<img src="https://img.icons8.com/material/24/000000/shopping-cart.png">
 	    </a>
-	    <button type="button" class="btn btn-success" id="btn-m-left">Entrar</button>
+	    <button type="button" class="btn btn-success" id="btn-m-left">Entrar ou Cadastrar</button>
     </div>
   </div>
   <!-- INICIO MENU -->
@@ -87,5 +87,8 @@
     </main>
   </div>
 </div>
+<footer class="container">
+  <a href="{$CONTATO}">Fale Conosco</a>
+</footer>
 </body>
 </html>
