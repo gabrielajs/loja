@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-02 02:28:23
+/* Smarty version 3.1.33, created on 2019-02-04 00:56:43
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c550047660c80_71533996',
+  'unifunc' => 'content_5c578dcb9017b5_17212313',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1549074497,
+      1 => 1549239443,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c550047660c80_71533996 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c578dcb9017b5_17212313 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,7 +35,8 @@ function content_5c550047660c80_71533996 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
-    <title>Index</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['TITULO']->value;?>
+</title>
 </head>
 <body>
 <header class="">

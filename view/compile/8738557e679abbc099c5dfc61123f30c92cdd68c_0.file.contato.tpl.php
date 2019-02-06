@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-02 02:37:44
+/* Smarty version 3.1.33, created on 2019-02-03 23:42:40
   from 'C:\wamp64\www\loja\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c5502787870f2_33368899',
+  'unifunc' => 'content_5c577c709ada30_02861146',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8738557e679abbc099c5dfc61123f30c92cdd68c' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\contato.tpl',
-      1 => 1549075059,
+      1 => 1549237356,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c5502787870f2_33368899 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c577c709ada30_02861146 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h1 class="text-center">Entre em contato</h1>
 <form>
 	<div class="form-group">
@@ -53,5 +53,6 @@ function content_5c5502787870f2_33368899 (Smarty_Internal_Template $_smarty_tpl)
     <label for="comentario">Comentario</label>
     <textarea class="form-control" id="comentario" rows="3"></textarea>
   </div>
+  <button type="button" class="btn btn-primary">Enviar</button>
 </form><?php }
 }

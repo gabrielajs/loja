@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{$TEMA}/tema/css/estilo.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <title>Index</title>
+    <title>{$TITULO}</title>
 </head>
 <body>
 <header class="">

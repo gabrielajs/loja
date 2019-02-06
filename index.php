@@ -13,6 +13,14 @@
 	$smarty->assign('CARRINHO', Rotas::pageCarrinho());
 	/*PAGINA CONTATO*/
 	$smarty->assign('CONTATO', Rotas::pageContato());
+	/*TITULO DO SITE*/
+	$smarty->assign('TITULO', Config::SITE_NOME);
+
+	$dados = new Conexao();
+	$sql = 'select * from categorias';
+	$dados->executeSQL($sql);
+
+	var_dump($dados);
 
 
 
