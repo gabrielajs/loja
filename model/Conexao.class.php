@@ -1,7 +1,8 @@
 <?php 
 Class Conexao extends Config{
 	private $host,$user,$senha,$banco;
-
+	protected $obj, $prefix; 
+	protected $itens = array();
 	function __construct(){
 		$this->host = self::BD_HOST;
 		$this->user = self::BD_USER;
@@ -26,15 +27,24 @@ Class Conexao extends Config{
 		$link = new PDO("mysql:host={$this->host};dbname={$this->banco};", $this->user, $this->senha, $options);
 		return $link;
 	}
-
+	/*EXECUTA QUERY*/
 	function executeSQL($query, array $params = NULL){
 		$this->obj = $this->conectar()->prepare($query);
 		return $this->obj->execute();
 
 	}
-
+	/*LISTA DADOS DE QUERY*/
 	function listarDados(){
-		
+		return $this->obj->fetch(PDO::FETCH_ASSOC);
+	}
+	/*VERIFICA QUANTOS DADOS EXISTEM*/
+	function totalDados(){
+		return $this->obj->rowCount();
+	}
+	/*RETORNA TODOS OS DADOS
+	  DE UMA BUSCA*/
+	function getItens(){
+		return $this->itens;
 	}
 }
 ?>

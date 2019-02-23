@@ -12,7 +12,7 @@ Class Rotas{
 			/* UTILIZANDO EXPLODE PARA SEPARAR COM / */
 			self::$page = explode('/', $pagina);
 			/* VARIAVEL PAGINA RECEBE O QUE FOI DIGITADO NA URL*/
-			$pagina = 'controller/' . $_GET['page'] . '.php';
+			$pagina = 'controller/' . self::$page[0] . '.php';
 			/* CASO ARQUIVO EXISTE A PAGINA SERA EXIBIDA*/
 			if(file_exists($pagina)):
 				include $pagina;
@@ -46,6 +46,33 @@ Class Rotas{
 	/* PAGINA CONTATO*/
 	static function pageContato(){
 		return self::getSiteHome() . '/contato';
+	}
+
+	/*PAGINA PRODUTO*/
+	static function pageProdutos(){
+		return self::getSiteHome() . '/produtos';
+	}
+
+	/*PAGINA PRODUTOS INFORMAÇÃO*/
+	static function pageProdutosInfo(){
+		return self::getSiteHome() . '/produtosInfo';
+	}
+
+	/*PASTA MEDIA/IMAGES*/
+	static function getImagesPasta(){
+		return 'media/images/';
+	}
+
+	/*CAMINHO COMPLETA DA IMAGEM*/
+	static function getImagesUrl(){
+		return self::getSiteHome() . '/' . self::getImagesPasta();
+	}
+
+	/*RECEBENDO IMG*/
+	static function imageLink($img, $largura, $altura){
+		$imagem = self::getImagesUrl() . "thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
+
+		return $imagem;
 	}
 }
 ?>

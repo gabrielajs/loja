@@ -1,12 +1,13 @@
 .pd-site{
     padding: 15px;
 }
-.pd-top{
-    padding-top: 5px;
-}
 .color-bg{
     background-color: #4caf50;
 }
+.pd-top{
+    padding-top: 5px;
+}
+
 .text-color{
     color: #fff;
 }
@@ -25,4 +26,7 @@
 }
 input#inp-search {
     width: 330px;
+}
+.col-sm-2 {
+    background: #dededed4;
 }

@@ -4,7 +4,14 @@
 	require './lib/autoload.php';
 
 	$smarty = new Template();
+	$categoria = new Categorias();
+	$categoria->getCategorias();
+
+	/*CATEGORIAS*/
+	$smarty->assign('CATEGORIA', $categoria->getItens());
+
 	
+
 	/*BUSCAR PASTA TEMA */
 	$smarty->assign('TEMA', Rotas::getSiteTema());
 	/*PAGINA HOME DO SITE*/
@@ -13,18 +20,10 @@
 	$smarty->assign('CARRINHO', Rotas::pageCarrinho());
 	/*PAGINA CONTATO*/
 	$smarty->assign('CONTATO', Rotas::pageContato());
+	/*PAGINA PRODUTO*/
+	$smarty->assign('PRODUTO', Rotas::pageProdutos());
 	/*TITULO DO SITE*/
 	$smarty->assign('TITULO', Config::SITE_NOME);
-
-	$dados = new Conexao();
-	$sql = 'select * from categorias';
-	$dados->executeSQL($sql);
-
-	var_dump($dados);
-
-
-
-
 
 
 	/* EXIBINDO PAGINA SEMPRE FICARA POR ULTIMO*/

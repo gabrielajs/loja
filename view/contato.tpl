@@ -1,8 +1,8 @@
 <h1 class="text-center">Entre em contato</h1>
-<form>
+<form action="envio.php">
 	<div class="form-group">
 	    <label for="setor">Setor</label>
-	    <select class="form-control" id="setor">
+	    <select class="form-control" id="setor" name="setor">
 	      <option>Reclamação</option>
 	      <option>Elogios</option>
 	      <option>Financeiro</option>
@@ -24,11 +24,11 @@
 	</div>
 	<div class="form-group">
 	    <label for="email">E-mail</label>
-		<input type="email" class="form-control" id="email" placeholder="email">
+		<input type="email" class="form-control" id="email" name="email" placeholder="e-mail">
 	</div>
 	<div class="form-group">
     <label for="comentario">Comentario</label>
-    <textarea class="form-control" id="comentario" rows="3"></textarea>
+    <textarea class="form-control" id="comentario" rows="3" name="mensagem"></textarea>
   </div>
-  <button type="button" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

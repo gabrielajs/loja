@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-03 23:42:40
+/* Smarty version 3.1.33, created on 2019-02-08 00:04:38
   from 'C:\wamp64\www\loja\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c577c709ada30_02861146',
+  'unifunc' => 'content_5c5cc7964830f7_56015407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8738557e679abbc099c5dfc61123f30c92cdd68c' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\contato.tpl',
-      1 => 1549237356,
+      1 => 1549584269,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c577c709ada30_02861146 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c5cc7964830f7_56015407 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h1 class="text-center">Entre em contato</h1>
-<form>
+<form action="envio.php">
 	<div class="form-group">
 	    <label for="setor">Setor</label>
-	    <select class="form-control" id="setor">
+	    <select class="form-control" id="setor" name="setor">
 	      <option>Reclamação</option>
 	      <option>Elogios</option>
 	      <option>Financeiro</option>
@@ -47,12 +47,12 @@ function content_5c577c709ada30_02861146 (Smarty_Internal_Template $_smarty_tpl)
 	</div>
 	<div class="form-group">
 	    <label for="email">E-mail</label>
-		<input type="email" class="form-control" id="email" placeholder="email">
+		<input type="email" class="form-control" id="email" name="email" placeholder="e-mail">
 	</div>
 	<div class="form-group">
     <label for="comentario">Comentario</label>
-    <textarea class="form-control" id="comentario" rows="3"></textarea>
+    <textarea class="form-control" id="comentario" rows="3" name="mensagem"></textarea>
   </div>
-  <button type="button" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form><?php }
 }

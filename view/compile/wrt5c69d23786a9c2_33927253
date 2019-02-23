@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-23 00:42:27
+/* Smarty version 3.1.33, created on 2019-02-17 21:29:27
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c7096f3ebdd50_45269537',
+  'unifunc' => 'content_5c69d237865307_89435917',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1550882543,
+      1 => 1550438957,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c7096f3ebdd50_45269537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c69d237865307_89435917 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -80,56 +80,19 @@ function content_5c7096f3ebdd50_45269537 (Smarty_Internal_Template $_smarty_tpl)
 
   <!-- CONTEUDO -->
   <div class="row" id="conteudo">
-    <div class="col-sm-2">
-      <div class="list-group">
-        <a class="list-group-item" href="#">Categorias</a>
-        
-        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIA']->value, 'C');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
-?>
-          <a class="list-group-item" href="#"><?php echo $_smarty_tpl->tpl_vars['C']->value['c_nome'];?>
-</a>
-        <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-      </div>
+    <div class="col" id="aside" style="background: red">
+      
     </div>
-
-
-
-
-
-
-    <div class="col-sm-8">
-      <?php 
-        Rotas::getPagina();
-      ?>
+    <div class="col-8" id="section" style="background: blue">
+      
     </div>
   </div>
 
 
-  <!-- RODAPE 
-  <div class="row" id="footer">
-    <div class="col-sm-1">
-      <p>redes sociais</p>
-    </div>
-
-    <div class="col-sm-1">
-      <p>info site</p>
-    </div>
-
-    <div class="col-sm-1">
-      <p>pagamentos</p>
-    </div>
-
-    <div class="col-sm-1">
-      <a href="<?php echo $_smarty_tpl->tpl_vars['CONTATO']->value;?>
-">Fale Conosco</a>
-    </div>
-  </div>-->
+  <!-- RODAPE -->
+  <div class="" id="footer">
+    
+  </div>
 </div>
 </body>
 </html><?php }
