@@ -51,9 +51,8 @@
     <div class="col-sm-2">
       <div class="list-group">
         <a class="list-group-item" href="#">Categorias</a>
-        
         {foreach from=$CATEGORIA item=C}
-          <a class="list-group-item" href="#">{$C.c_nome}</a>
+          <a class="list-group-item" href="{$C.c_link}">{$C.c_nome}</a>
         {/foreach}
       </div>
     </div>
@@ -63,7 +62,7 @@
 
 
 
-    <div class="col-sm-8">
+    <div class="col-sm">
       {php}
         Rotas::getPagina();
       {/php}

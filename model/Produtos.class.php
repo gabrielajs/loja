@@ -4,6 +4,14 @@ Class Produtos extends Conexao{
 		parent::__construct();
 	}
 
+	/*BUSCANDO PRODUTOS POR CATEGORIA*/
+	function getProdutosCatId($id){
+		$query = "SELECT * FROM produtos p INNER JOIN categorias c ON c.cat_id = p.categoria_id AND cat_id = {$id}";
+		//$query .= "AND prod_id = :id"; 
+		$this->executeSQL($query);
+		$this->getLista();
+	}
+
 	/*BUSCANDO PRODUTOS POR ID*/
 	function getProdutosId($id){
 		$query = "SELECT * FROM produtos p INNER JOIN categorias c ON p.categoria_id = c.cat_id AND prod_id = {$id}";
