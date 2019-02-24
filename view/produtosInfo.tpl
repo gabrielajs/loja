@@ -2,13 +2,11 @@
 	<h3 class="text-center">{$P.p_nome}</h3>
 	<hr>
 
-	<div class="">
+	<div class="row">
 	    <div class="">
 	        <img class="thumbnail" src="{$P.p_img_g}" alt="" > 
 	    </div>
 	    <div class="thumbnail"> 
-	    	<img src="{$TEMA}/imagens/logo-pagseguro.png" alt="">
-	  		<hr>
 	        <div class="">
 	           <h3 class="text-center preco">R${$P.p_valor}</h3>     
 	        </div>

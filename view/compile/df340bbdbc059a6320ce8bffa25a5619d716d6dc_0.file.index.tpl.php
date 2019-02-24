@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-23 03:46:41
+/* Smarty version 3.1.33, created on 2019-02-23 04:13:33
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c70c221b0c0e4_92268479',
+  'unifunc' => 'content_5c70c86d16adb1_15784754',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1550893597,
+      1 => 1550895209,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c70c221b0c0e4_92268479 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c70c86d16adb1_15784754 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -82,7 +82,9 @@ function content_5c70c221b0c0e4_92268479 (Smarty_Internal_Template $_smarty_tpl)
   <div class="row" id="conteudo">
     <div class="col-sm-2">
       <div class="list-group">
-        <a class="list-group-item" href="#">Categorias</a>
+        <a class="list-group-item">Categorias</a>
+        <a class="list-group-item" href="<?php echo $_smarty_tpl->tpl_vars['PRODUTO']->value;?>
+">Todos</a>
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIA']->value, 'C');
 if ($_from !== null) {

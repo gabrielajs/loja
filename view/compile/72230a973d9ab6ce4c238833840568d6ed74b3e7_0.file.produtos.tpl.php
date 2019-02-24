@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-23 04:03:10
+/* Smarty version 3.1.33, created on 2019-02-23 19:15:09
   from 'C:\wamp64\www\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c70c5fe10daf8_01913796',
+  'unifunc' => 'content_5c719bbd94e095_02184076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72230a973d9ab6ce4c238833840568d6ed74b3e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\produtos.tpl',
-      1 => 1550894585,
+      1 => 1550896850,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c70c5fe10daf8_01913796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c719bbd94e095_02184076 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Lista de produtos</h3>
 <hr> 
+
+<!-- VERIFICANDO SE EXISTE PRODUTO -->
+<?php if ($_smarty_tpl->tpl_vars['P_TOTAL']->value < 1) {?>
+	<div class="alert alert-danger" role="alert"> Produto não encontrado! </div>
+<?php }?>
 <section id="produtos" class="row">  
 	<ul style="list-style: none;padding: 0 5px 5px 0;">    		  
 		<div class="row" id="pularliha">

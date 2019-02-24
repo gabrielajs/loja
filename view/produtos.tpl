@@ -1,5 +1,10 @@
 <h3>Lista de produtos</h3>
 <hr> 
+
+<!-- VERIFICANDO SE EXISTE PRODUTO -->
+{if $P_TOTAL < 1}
+	<div class="alert alert-danger" role="alert"> Produto não encontrado! </div>
+{/if}
 <section id="produtos" class="row">  
 	<ul style="list-style: none;padding: 0 5px 5px 0;">    		  
 		<div class="row" id="pularliha">

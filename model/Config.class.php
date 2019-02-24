@@ -12,7 +12,7 @@ Class Config{
 	const BD_USER = "root";
 	const BD_SENHA = "";
 	const BD_BANCO = "loja";
-	const BD_PREFIX = "";
+	const BD_PREFIX = "t_";
 
 	/* INFORMAÇÕES PARA PHP MAILER*/
 	const EMAIL_HOST = "smtp.gmail.com";

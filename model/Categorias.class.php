@@ -10,7 +10,7 @@ Class Categorias extends Conexao{
 	/*BUSCANDO NO BANCO DE DADOS
 	  TODAS AS CATEGORIAS*/
 	function getCategorias(){
-		$query = "SELECT * FROM categorias ORDER BY cat_nome ASC";
+		$query = "SELECT * FROM {$this->prefix}categorias ORDER BY cat_nome ASC";
 		$this->executeSQL($query);
 		$this->getLista();
 	}

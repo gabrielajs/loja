@@ -6,23 +6,25 @@ Class Produtos extends Conexao{
 
 	/*BUSCANDO PRODUTOS POR CATEGORIA*/
 	function getProdutosCatId($id){
-		$query = "SELECT * FROM produtos p INNER JOIN categorias c ON c.cat_id = p.categoria_id AND cat_id = {$id}";
+		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON c.cat_id = p.categoria_id AND cat_id = :id";
 		//$query .= "AND prod_id = :id"; 
-		$this->executeSQL($query);
+		$params = array(':id'=>(int)$id);
+		$this->executeSQL($query, $params);
 		$this->getLista();
 	}
 
 	/*BUSCANDO PRODUTOS POR ID*/
 	function getProdutosId($id){
-		$query = "SELECT * FROM produtos p INNER JOIN categorias c ON p.categoria_id = c.cat_id AND prod_id = {$id}";
+		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.categoria_id = c.cat_id AND prod_id = :id";
 		//$query .= "AND prod_id = :id"; 
-		$this->executeSQL($query);
+		$params = array(':id'=>(int)$id);
+		$this->executeSQL($query, $params);
 		$this->getLista();
 	}
 
 	/*BUSCANDO PRODUTOS QUE DE UMA CATEGORIA ESPECIFICA*/
 	function getProdutos(){
-		$query = "SELECT * FROM produtos p INNER JOIN categorias c ON p.categoria_id = c.cat_id";
+		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.categoria_id = c.cat_id";
 		/*$query .= "ORDER BY prod_id DESC";*/ 
 		$this->executeSQL($query);
 		$this->getLista();
