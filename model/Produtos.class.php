@@ -40,7 +40,7 @@ Class Produtos extends Conexao{
 				'p_descricao'=> $lista['prod_descricao'],
 				'p_peso'=> $lista['prod_peso'],
 				'p_altura'=> $lista['prod_altura'],
-				'p_valor'=> $lista['prod_valor'],
+				'p_valor'=> Sistema::MoedaBR($lista['prod_valor']),
 				'p_comprimento'=> $lista['prod_comprimento'],
 				'p_img'=> Rotas::imageLink($lista['prod_img'],180,180),
 				'p_img_g'=> Rotas::imageLink($lista['prod_img'],300,300),

@@ -21,10 +21,13 @@
 	</div>
 	<div>
         <h4 class="text-center">Mais imagens</h4>
-        <ul style="list-style: none">           
+        
+        <ul style="list-style: none"> 
+        {foreach from=$IMG item=I}          
             <li class="">
-              	<img src="{$P.p_img_p}" alt="" class="thumbnail">
+              	<img src="{$I.img_nome}" alt="" class="thumbnail">
             </li>
+        {/foreach}
         </ul>
     </div>
     <div>

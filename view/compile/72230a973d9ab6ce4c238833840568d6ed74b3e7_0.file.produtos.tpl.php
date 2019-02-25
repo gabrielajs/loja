@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-23 19:15:09
+/* Smarty version 3.1.33, created on 2019-02-25 00:18:00
   from 'C:\wamp64\www\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c719bbd94e095_02184076',
+  'unifunc' => 'content_5c7334383bcfc2_80253571',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72230a973d9ab6ce4c238833840568d6ed74b3e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\produtos.tpl',
-      1 => 1550896850,
+      1 => 1551053863,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c719bbd94e095_02184076 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c7334383bcfc2_80253571 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Lista de produtos</h3>
 <hr> 
 
@@ -47,7 +47,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 		                <div class="caption">
 		                    <h4 class="text-center"><?php echo $_smarty_tpl->tpl_vars['P']->value['p_nome'];?>
 </h4> 
-		                    <h3 class="text-center text-danger"><?php echo $_smarty_tpl->tpl_vars['P']->value['p_valor'];?>
+		                    <h3 class="text-center text-danger">R$<?php echo $_smarty_tpl->tpl_vars['P']->value['p_valor'];?>
 </h3>
 		                </div>
 		            </a>

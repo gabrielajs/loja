@@ -15,7 +15,7 @@
 						<img src="{$P.p_img_g}" class="thumbnail"> 
 		                <div class="caption">
 		                    <h4 class="text-center">{$P.p_nome}</h4> 
-		                    <h3 class="text-center text-danger">{$P.p_valor}</h3>
+		                    <h3 class="text-center text-danger">R${$P.p_valor}</h3>
 		                </div>
 		            </a>
 		        </div>

@@ -1,9 +1,15 @@
 <?php 
 	$smarty = new Template();
 
+	/*IMAGENS*/
+	$img = new ProdutosImagens();
+	$img->getImagensProId(Rotas::$page[1]);
+
+	$smarty->assign('IMG', $img->getItens());
+
+
+	/*PRODUTOS*/
 	$produtos = new Produtos();
-	/*PESQUISANDO ID UTILIZANDO ARRAY NA POSIÇÃO 1
-	$produtos->getProdutosId(Rotas::$page[1]);*/
 	$produtos->getProdutosId(Rotas::$page[1]);
 
 	$smarty->assign('PROD', $produtos->getItens());
