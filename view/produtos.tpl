@@ -26,6 +26,6 @@
 </section>
       
 <section id="pagincao" class="row">
-    <center>PAGINAS</center>
+    <center>{$PAGINACAO}</center>
 </section>
 

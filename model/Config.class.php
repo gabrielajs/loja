@@ -13,6 +13,7 @@ Class Config{
 	const BD_SENHA = "";
 	const BD_BANCO = "loja";
 	const BD_PREFIX = "t_";
+	const BD_LIMIT_PAG = 1;
 
 	/* INFORMAÇÕES PARA PHP MAILER*/
 	const EMAIL_HOST = "smtp.gmail.com";

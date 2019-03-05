@@ -19,6 +19,8 @@ Class Rotas{
 			else:
 				include 'erro.php';
 			endif;
+		else:
+			include 'home.php';
 		endif;
 	}
 	/* FIM VERIFICANDO URL*/
@@ -73,6 +75,10 @@ Class Rotas{
 		$imagem = self::getImagesUrl() . "thumb.php?src={$img}&w={$largura}&h={$altura}&zc=1";
 
 		return $imagem;
+	}
+
+	static function getPastaController(){
+		return self::$pastaController;
 	}
 }
 ?>

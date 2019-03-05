@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-25 00:18:00
+/* Smarty version 3.1.33, created on 2019-03-02 01:37:48
   from 'C:\wamp64\www\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c7334383bcfc2_80253571',
+  'unifunc' => 'content_5c79de6c7569f8_21749526',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72230a973d9ab6ce4c238833840568d6ed74b3e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\produtos.tpl',
-      1 => 1551053863,
+      1 => 1551490623,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c7334383bcfc2_80253571 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c79de6c7569f8_21749526 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Lista de produtos</h3>
 <hr> 
 
@@ -62,7 +62,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </section>
       
 <section id="pagincao" class="row">
-    <center>PAGINAS</center>
+    <center><?php echo $_smarty_tpl->tpl_vars['PAGINACAO']->value;?>
+</center>
 </section>
 
 <?php }

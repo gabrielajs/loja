@@ -1,8 +1,9 @@
 <?php 
 Class Conexao extends Config{
 	private $host,$user,$senha,$banco;
-	protected $obj, $prefix; 
-	protected $itens = array();
+	protected $obj, $prefix, $itens = array();
+	public $paginacaoLink, $totalPages, $limite, $inicio;
+
 	function __construct(){
 		$this->host = self::BD_HOST;
 		$this->user = self::BD_USER;
@@ -53,6 +54,50 @@ Class Conexao extends Config{
 	  DE UMA BUSCA*/
 	function getItens(){
 		return $this->itens;
+	}
+
+	/* PAGINACAO */
+	function pageLink($campo, $tabela){
+		$pag = new Paginacao();
+		$pag->getPaginacao($campo, $tabela);
+		$this->paginacaoLink = $pag->link;
+		$this->totalPages = $pag->totalPages;
+		$this->limite = $pag->limite;
+		$this->inicio = $pag->inicio;
+
+		$inicio = $pag->inicio;
+		$limite = $pag->limite;
+
+		if($this->totalPages > 0):
+			return " LIMIT {$inicio}, {$limite}";
+		else:
+			return "";
+		endif;
+	}
+
+	protected function paginacao($paginas=array()){
+		$pag = '<ul class="pagination">';
+		$pag .= '<li class="page-item"><a href="?p=1" class="page-link">Inicio</a></li>';
+
+		foreach($paginas as $p):
+			$pag .= '<li class="page-item"><a href="?p='.$p.'" class="page-link"> '.$p.' </a></li>';
+		endforeach;
+		
+		$pag .= '<li class="page-item"><a href="?p='.$this->totalPages.'" class="page-link">Fim</a></li>';
+		$pag .= '</ul>';
+
+		/*caso não tiver nenhum produto
+		  não será necessario mostrar a
+		  paginação */
+		if($this->totalPages > 1){
+			return $pag;
+		}	
+	}
+
+	
+
+	function showPaginacao(){
+		return $this->paginacao($this->paginacaoLink);
 	}
 }
 ?>

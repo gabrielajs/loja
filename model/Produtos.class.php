@@ -6,8 +6,10 @@ Class Produtos extends Conexao{
 
 	/*BUSCANDO PRODUTOS POR CATEGORIA*/
 	function getProdutosCatId($id){
+		$id = filter_var($id, FILTER_SANITIZE_NUMBER_INT);
+
 		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON c.cat_id = p.categoria_id AND cat_id = :id";
-		//$query .= "AND prod_id = :id"; 
+		$query .= $this->pageLink("prod_id", $this->prefix."produtos WHERE categoria_id=" .(int)$id); 
 		$params = array(':id'=>(int)$id);
 		$this->executeSQL($query, $params);
 		$this->getLista();
@@ -25,7 +27,8 @@ Class Produtos extends Conexao{
 	/*BUSCANDO PRODUTOS QUE DE UMA CATEGORIA ESPECIFICA*/
 	function getProdutos(){
 		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.categoria_id = c.cat_id";
-		/*$query .= "ORDER BY prod_id DESC";*/ 
+		$query .= $this->pageLink("prod_id", $this->prefix."produtos"); 
+		
 		$this->executeSQL($query);
 		$this->getLista();
 	}

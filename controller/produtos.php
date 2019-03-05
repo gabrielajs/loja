@@ -16,6 +16,7 @@
 	$smarty->assign('PROD', $produtos->getItens());
 	$smarty->assign('INFO_PRO', Rotas::pageProdutosInfo());
 	$smarty->assign('P_TOTAL', $produtos->totalDados());
+	$smarty->assign('PAGINACAO', $produtos->showPaginacao());
 	
 	$smarty->display('produtos.tpl');
 ?>

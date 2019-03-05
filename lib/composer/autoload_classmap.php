@@ -9,6 +9,7 @@ return array(
     'Categorias' => $baseDir . '/model/Categorias.class.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
     'Config' => $baseDir . '/model/Config.class.php',
+    'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
     'ProdutosImagens' => $baseDir . '/model/ProdutosImagens.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
