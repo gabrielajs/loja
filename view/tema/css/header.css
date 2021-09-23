@@ -1,0 +1,64 @@
+.espacamento {
+    padding: 10px 2%;
+}
+
+#img-logo {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#busca {
+    width: 695px;
+    height: 60px;
+    margin: 3px 0 0 30px;
+}
+
+#form-busca {
+    padding: 10px;
+}
+
+#icones {
+    font-size: 12px;
+    margin: 8px 0 0 30px;
+}
+
+.entrar-cadastrar {
+    width: 115px;
+    height: 50px;
+}
+
+.entrar-cadastrar::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    content: "\f007";
+    position: absolute;
+    font-weight: 900;
+}
+
+.texto {
+    position: relative;
+    left: 32px;
+    top: 7px;
+}
+
+#carrinho {
+    width: 115px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 2px;
+}
+
+#header-menu {
+    background-color: #000;
+}
+
+#menu ul {
+    padding: 6px 0;
+}
+
+#menu ul li a {
+    color: #67b96b;
+    font-size: 20px;
+}

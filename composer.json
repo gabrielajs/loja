@@ -1,0 +1,24 @@
+{
+    "name": "loja/loja_design",
+    "description": "Loja virtual dinamico, onde usuario pode cadastrar seu produtos para vender online site será responsivo utilizando boostrap, smartytemplete",
+    "authors": [{
+        "name": "Gabriela",
+        "email": "gabrielajustinodesouza@gmail.com"
+    }],
+
+    "require": {
+        "smarty/smarty": "3.1.19",
+        "phpmailer/phpmailer": "~6.1"
+    },
+
+    "config": {
+        "vendor-dir": "lib/"
+    },
+
+    "autoload": {
+        "classmap": ["model/"]
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}

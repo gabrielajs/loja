@@ -1,0 +1,16 @@
+.info {
+    margin-bottom: 30px;
+}
+
+.info-en,
+.frete {
+    margin-top: 30px;
+}
+
+.font-p {
+    font-size: 1.5em;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
