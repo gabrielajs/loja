@@ -57,6 +57,12 @@ class Login extends Conexao
         endif;
     }
 
+    static function logout()
+    {
+        unset($_SESSION['CLI']);
+        Rotas::redirecionar(0, Rotas::getSiteHome());
+    }
+
     function getUsuario()
     {
         return $this->usuario;

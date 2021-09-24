@@ -159,4 +159,10 @@ class Rotas
     {
         return self::getSiteHome() . '/carrinho';
     }
+
+    //pagina sair
+    static function pageLogout()
+    {
+        return self::getSiteHome() . '/sair';
+    }
 }

@@ -12,6 +12,7 @@ endif;
 
 if(Login::logado()):
     $smarty->assign('NOME', $_SESSION['CLI']['c_nome']);
+    $smarty->assign('SAIR', Rotas::pageLogout());
 endif;
 
 $smarty->assign('CLIENTE', Rotas::pageCliente());
