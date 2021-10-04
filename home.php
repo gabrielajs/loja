@@ -22,8 +22,10 @@ $smarty->assign('NOME_SITE', Rotas::getNomeSite()); //nome do site informado na 
 $smarty->assign('HOME', Rotas::getSiteHome()); //home do site informado na classe Config
 $smarty->assign('LOGIN', Rotas::pageLogin()); //pagina de login
 $smarty->assign('LOGADO', Login::logado()); //cliente logado
-$smarty->assign('NOME', $_SESSION['CLI']['c_nome']);
+$smarty->assign('SAIR', Rotas::pageLogout()); 
 
-
+if(Login::logado()):
+    $smarty->assign('NOME', $_SESSION['CLI']['c_nome']);
+endif;
 
 $smarty->display('home.tpl');

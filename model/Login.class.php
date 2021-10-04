@@ -44,7 +44,7 @@ class Login extends Conexao
 
             Rotas::redirecionar(0, Rotas::pageLogin());
         else :
-            echo '<div class="alert alert-danger"> Erro ao realizar login tente novamente mais tarde </div>';
+            echo '<div class="alert alert-danger"> Senha ou e-mail incorreto! </div>';
         endif;
     }
 
@@ -55,6 +55,11 @@ class Login extends Conexao
         else :
             return false;
         endif;
+    }
+
+    static function acessoNegado()
+    {
+        Rotas::redirecionar(0, Rotas::pageLogin());
     }
 
     static function logout()

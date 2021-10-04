@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19-dev, created on 2021-09-23 20:54:49
+<?php /* Smarty version Smarty-3.1.19-dev, created on 2021-09-28 02:03:58
          compiled from "view\cabecalho-site.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19901892345f4d2cc67f85a2-02053973%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c59659ae07174cc430c192fc55dae2cc959872a6' => 
     array (
       0 => 'view\\cabecalho-site.tpl',
-      1 => 1632423282,
+      1 => 1632787432,
       2 => 'file',
     ),
   ),
@@ -23,8 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOME' => 0,
     'C' => 0,
     'LOGADO' => 0,
-    'NOME' => 0,
     'LOGIN' => 0,
+    'NOME' => 0,
+    'SAIR' => 0,
     'MENU' => 0,
     'M' => 0,
   ),
@@ -58,8 +59,11 @@ $_smarty_tpl->tpl_vars['C']->_loop = true;
         <div id="icones" class="f-right inline-block">
             <div class="entrar-cadastrar inline-block">
                 <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value==true) {?>
-                    <span class="texto">Olá <?php echo $_smarty_tpl->tpl_vars['NOME']->value;?>
-</span><br>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['LOGIN']->value;?>
+"><span class="texto">Olá <?php echo $_smarty_tpl->tpl_vars['NOME']->value;?>
+</span></a><br>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['SAIR']->value;?>
+" class="texto">Sair</a>
                 <?php } else { ?>
                     <span class="texto">Bem vindo</span><br>
                     <a href="<?php echo $_smarty_tpl->tpl_vars['LOGIN']->value;?>

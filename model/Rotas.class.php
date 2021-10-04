@@ -157,7 +157,7 @@ class Rotas
     //pagina confirmar pedido
     static function pageConfirmarPedido()
     {
-        return self::getSiteHome() . '/carrinho';
+        return self::getSiteHome() . '/confirmarPedido';
     }
 
     //pagina sair

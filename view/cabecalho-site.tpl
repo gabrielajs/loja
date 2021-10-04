@@ -20,7 +20,8 @@
         <div id="icones" class="f-right inline-block">
             <div class="entrar-cadastrar inline-block">
                 {if $LOGADO == TRUE}
-                    <span class="texto">Olá {$NOME}</span><br>
+                    <a href="{$LOGIN}"><span class="texto">Olá {$NOME}</span></a><br>
+                    <a href="{$SAIR}" class="texto">Sair</a>
                 {else}
                     <span class="texto">Bem vindo</span><br>
                     <a href="{$LOGIN}" class="texto">Entre ou Cadastre</a>
