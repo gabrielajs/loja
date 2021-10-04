@@ -14,24 +14,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => '00f857daa2b29dc22a2601c1c71bccc62999c3d8',
+    'reference' => '9e1dc96dfce19f499de7d7bfc4f63eb9c1024f29',
     'name' => 'loja/loja_design',
   ),
   'versions' => 
   array (
     'loja/loja_design' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => '00f857daa2b29dc22a2601c1c71bccc62999c3d8',
+      'reference' => '9e1dc96dfce19f499de7d7bfc4f63eb9c1024f29',
     ),
     'phpmailer/phpmailer' => 
     array (
@@ -44,12 +44,12 @@ private static $installed = array (
     ),
     'smarty/smarty' => 
     array (
-      'pretty_version' => 'v3.1.19',
-      'version' => '3.1.19.0',
+      'pretty_version' => 'v3.1.39',
+      'version' => '3.1.39.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'be0fd3186ceec57e4da9a44031f517c06ae2418a',
+      'reference' => 'e27da524f7bcd7361e3ea5cdfa99c4378a7b5419',
     ),
     'squizlabs/php_codesniffer' => 
     array (

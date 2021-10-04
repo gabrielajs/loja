@@ -7,7 +7,7 @@
     }],
 
     "require": {
-        "smarty/smarty": "3.1.19",
+        "smarty/smarty": "3.1.39",
         "phpmailer/phpmailer": "~6.1"
     },
 
