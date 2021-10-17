@@ -1,5 +1,5 @@
-{if $LOGADO}
-<h1>CONFIRMAR PEDIDO</h1>
+{if $LOGADO == TRUE}
+    <h1>CONFIRMAR PEDIDO</h1>
 
 {else}
 

@@ -27,7 +27,7 @@ if(isset($_POST['nome'])):
     $cliente->inserir();
 
     echo '<div class="alert alert-success">Cadastro efetuado com sucesso!</div>';
-    Rotas::redirecionar(4, Rotas::pageLogin());
+    Rotas::redirecionar(4, Rotas::getSiteHome());
 else:
     $smarty->display('cliente.tpl');
 endif;

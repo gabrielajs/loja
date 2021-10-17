@@ -42,7 +42,7 @@ class Login extends Conexao
             $_SESSION['CLI']['c_dataNasc'] = $lista['dataNasc_cliente'];
             $_SESSION['CLI']['c_uf'] = $lista['uf_cliente'];
 
-            Rotas::redirecionar(0, Rotas::pageLogin());
+            // Rotas::redirecionar(0, Rotas::pageLogin());
         else :
             echo '<div class="alert alert-danger"> Senha ou e-mail incorreto! </div>';
         endif;
@@ -85,7 +85,7 @@ class Login extends Conexao
 
     function setSenha($senha)
     {
-        //$this->senha = Sistema::criptografiaSenha($senha); 
-        $this->senha = $senha;
+        $this->senha = Sistema::criptografiaSenha($senha); 
+        //$this->senha = $senha;
     }
 }
