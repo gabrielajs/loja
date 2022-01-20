@@ -3,8 +3,14 @@
 
 require './lib/autoload.php';
 
+/* SE NÃO TIVER UMA SESSÃO INICIA UMA*/ 
 if(!isset($_SESSION)):
     session_start();
+endif;
+
+/* TODA VEZ QUE CRIA UMA NOVA SESSÃO É CRIADO UM NOVO CÓDIGO*/
+if(!isset($_SESSION['pedido'])):
+    $_SESSION['pedido'] = date('YmdHms');
 endif;
 
 $smarty = new Template();

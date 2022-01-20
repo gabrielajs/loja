@@ -1,5 +1,6 @@
 <?php
 
-class ConfirmarPedido extends Config
+class ConfirmarPedido extends Conexao
 {
+    
 }

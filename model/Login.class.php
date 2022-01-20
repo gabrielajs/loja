@@ -60,6 +60,7 @@ class Login extends Conexao
     static function acessoNegado()
     {
         Rotas::redirecionar(0, Rotas::pageLogin());
+        //echo '<div class="alert alert-danger"> ACESSO NEGADO</div>';
     }
 
     static function logout()

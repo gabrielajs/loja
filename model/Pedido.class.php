@@ -33,21 +33,24 @@ class Pedido extends Conexao
         return $retorno;
     }
 
-    function itensSalvar($cod)
+    function itensSalvar($codPedido)
     {
         $carrinho = new Carrinho();
 
         foreach($carrinho->getCarrinho() as $item):
-            $query = "INSERT INTO" .$this->prefix."pedidoitens (id_produto, valor_pedItem, qtd_pedItem, ped_cod_pedItem) VALUES (:produto, :valor, :qtd, :ped_cod)";
+            $query = "INSERT INTO " .$this->prefix."pedidoitens (id_produto, valor_pedItem, qtd_pedItem, ped_cod_pedItem) VALUES (:produto, :valor, :qtd, :ped_cod)";
 
             $params = array(
                 ':produto' => $item['p_id'],
-                ':valor' => $item['p_valor'],
-                ':qtd' => (int)$item['p_qtd'],
-                ':ped_cod' => $cod
+                ':valor'   => $item['p_valor'],
+                ':qtd'     => (int)$item['p_qtd'],
+                ':ped_cod' => $codPedido
             );
 
             $this->executeSql($query, $params);
+
+            var_dump($query);
+            var_dump($params);
         endforeach;
     }
 }

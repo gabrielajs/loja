@@ -11,9 +11,9 @@ if ($_SESSION['PRO']) :
     
     $cliente = 1;
     $sessao = $_SESSION['pedido'];
-    $ref = '123456';
+    $cod = '123456';
     
-    $pedido->pedidoSalvar($cliente, $sessao, $ref);
+    $pedido->pedidoSalvar($cliente, $sessao, $cod);
 else:
     echo '<div class="alert alert-secondary" role="alert">Carrinho vazio !</div>';
 endif;

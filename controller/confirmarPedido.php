@@ -3,10 +3,9 @@
 
     $login = new Login();
 
-    $smarty->assign('NEGADO', $login::acessoNegado());
-    $smarty->assign('LOGADO', $login::logado());
-
-    $smarty->display('confirmarPedido.tpl');
-
-
-    
+    if(Login::logado()):
+        $smarty->assign('LOGADO', $login::logado());
+        $smarty->display('confirmarPedido.tpl');
+    else:
+        $smarty->assign('NEGADO', $login::acessoNegado());
+    endif;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-17 04:19:18
+/* Smarty version 3.1.39, created on 2021-10-17 05:35:19
   from 'C:\xampp\htdocs\loja_design\view\confirmarPedido.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616b88263c6305_88642883',
+  'unifunc' => 'content_616b99f733cd27_50696432',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3dcdfecef26ca05746a682bd044d57409aae3e17' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja_design\\view\\confirmarPedido.tpl',
-      1 => 1634436966,
+      1 => 1634441715,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616b88263c6305_88642883 (Smarty_Internal_Template $_smarty_tpl) {
+function content_616b99f733cd27_50696432 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['LOGADO']->value == TRUE) {?>
     <h1>CONFIRMAR PEDIDO</h1>
 
