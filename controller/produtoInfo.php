@@ -2,6 +2,7 @@
 $produto = new Produto();
 $smarty = new Template();
 $imagem = new Imagens();
+$correio = new Correio();
 
 $produto->getProdutosId(Rotas::$page[1]);
 $imagem->getImagem(Rotas::$page[1]);
@@ -9,6 +10,10 @@ $imagem->getImagem(Rotas::$page[1]);
 $smarty->assign('PRO', $produto->getItens());
 $smarty->assign('IMG', $imagem->getItens());
 $smarty->assign('COMPRAR', Rotas::pageCarrinhoAlterar());
+
+if(isset($_POST['cep'])):
+    $cep = $_POST['cep'];
+endif;
 
 /*$ID = Rotas::$page[1];
 foreach ($produto->getItens() as $pro) {

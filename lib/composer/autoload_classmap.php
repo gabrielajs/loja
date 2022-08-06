@@ -13,6 +13,7 @@ return array(
     'Config' => $baseDir . '/model/Config.class.php',
     'Configuracoes' => $baseDir . '/model/Configuracoes.class.php',
     'ConfirmarPedido' => $baseDir . '/model/ConfirmarPedido.class.php',
+    'Correio' => $baseDir . '/model/correio.class.php',
     'Imagens' => $baseDir . '/model/Imagens.class.php',
     'Login' => $baseDir . '/model/Login.class.php',
     'Menu' => $baseDir . '/model/Menu.class.php',

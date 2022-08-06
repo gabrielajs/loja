@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '9e1dc96dfce19f499de7d7bfc4f63eb9c1024f29',
+    'reference' => '5542339703bd9648247c6f6fca59749c91f65e56',
     'name' => 'loja/loja_design',
   ),
   'versions' => 
@@ -31,16 +31,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '9e1dc96dfce19f499de7d7bfc4f63eb9c1024f29',
+      'reference' => '5542339703bd9648247c6f6fca59749c91f65e56',
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.5.1',
-      'version' => '6.5.1.0',
+      'pretty_version' => 'v6.5.3',
+      'version' => '6.5.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'dd803df5ad7492e1b40637f7ebd258fee5ca7355',
+      'reference' => 'baeb7cde6b60b1286912690ab0693c7789a31e71',
     ),
     'smarty/smarty' => 
     array (
@@ -53,12 +53,12 @@ private static $installed = array (
     ),
     'squizlabs/php_codesniffer' => 
     array (
-      'pretty_version' => '3.6.0',
-      'version' => '3.6.0.0',
+      'pretty_version' => '3.6.2',
+      'version' => '3.6.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ffced0d2c8fa8e6cdc4d695a743271fab6c38625',
+      'reference' => '5e4e71592f69da17871dba6e80dd51bce74a351a',
     ),
   ),
 );

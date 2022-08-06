@@ -12,8 +12,11 @@ if ($_SESSION['PRO']) :
     $cliente = 1;
     $sessao = $_SESSION['pedido'];
     $cod = '123456';
-    
-    $pedido->pedidoSalvar($cliente, $sessao, $cod);
+
+    /* DEPOIS QUE O PEDIDO FOR SALVO A SESSÃO DO CARRINHO SERÁ LIMPA*/
+    if($pedido->pedidoSalvar($cliente, $sessao, $cod)):
+       $pedido->limparSessao(); 
+    endif;
 else:
     echo '<div class="alert alert-secondary" role="alert">Carrinho vazio !</div>';
 endif;

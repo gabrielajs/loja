@@ -32,9 +32,9 @@
                     <button type="submit" class="btn btn-lg btn-outline-primary">Comprar</button><br>
                 </form>
                 
-                <form class="form-inline frete">
+                <form class="form-inline frete" method="post" action="">
                     <div class="form-group mb-2">
-                        <input type="text" id="cep" class="form-control" placeholder="Calcular CEP">
+                        <input type="text" id="cep" name="cep" class="form-control" placeholder="Calcular CEP">
                     </div>
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-primary mb-2">OK</button>

@@ -33,7 +33,7 @@ class Clientes extends Conexao
         return $this->totalDados();
     }
 
-    //BUSCA EMAIL DO CLIENTE JÁ EXISTE
+    //BUSCA EMAIL DO CLIENTE VERIFICA SE JÁ EXISTE JÁ EXISTE
     function verificaEmail($email)
     {
         $query = "SELECT email_cliente FROM {$this->prefix}cliente WHERE email_cliente = :email";

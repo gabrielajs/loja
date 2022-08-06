@@ -48,9 +48,11 @@ class Pedido extends Conexao
             );
 
             $this->executeSql($query, $params);
-
-            var_dump($query);
-            var_dump($params);
         endforeach;
+    }
+
+    function limparSessao(){
+        unset($_SESSION['PRO']);
+        unset($_SESSION['PEDIDO']);
     }
 }

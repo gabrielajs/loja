@@ -24,7 +24,7 @@ class Carrinho
                 'p_qtd' => $lista['QTD'],
                 'p_valor' => $lista['VALOR'],
                 'p_valor_br' => $lista['VALOR_BR'],
-                'subTotal' => Sistema::MoedaBR($subTotal),
+                'subTotal'   => Sistema::MoedaBR($subTotal),
                 'subTotalUs' => $subTotalUs
             );
             $i++;

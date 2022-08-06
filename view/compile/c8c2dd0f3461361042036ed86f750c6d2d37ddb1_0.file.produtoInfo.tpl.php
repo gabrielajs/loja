@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-17 04:03:45
+/* Smarty version 3.1.39, created on 2022-02-17 01:42:25
   from 'C:\xampp\htdocs\loja_design\view\produtoInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616b8481649ce1_27943291',
+  'unifunc' => 'content_620d99f1845649_50675574',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8c2dd0f3461361042036ed86f750c6d2d37ddb1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja_design\\view\\produtoInfo.tpl',
-      1 => 1620955165,
+      1 => 1645058409,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616b8481649ce1_27943291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d99f1845649_50675574 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -73,9 +73,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <button type="submit" class="btn btn-lg btn-outline-primary">Comprar</button><br>
                 </form>
                 
-                <form class="form-inline frete">
+                <form class="form-inline frete" method="post" action="">
                     <div class="form-group mb-2">
-                        <input type="text" id="cep" class="form-control" placeholder="Calcular CEP">
+                        <input type="text" id="cep" name="cep" class="form-control" placeholder="Calcular CEP">
                     </div>
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-primary mb-2">OK</button>
