@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5542339703bd9648247c6f6fca59749c91f65e56',
+    'reference' => '845ad3ae3d483f1d67d78d660d664e79d1ef4bd5',
     'name' => 'loja/loja_design',
   ),
   'versions' => 
@@ -18,16 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5542339703bd9648247c6f6fca59749c91f65e56',
+      'reference' => '845ad3ae3d483f1d67d78d660d664e79d1ef4bd5',
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.5.3',
-      'version' => '6.5.3.0',
+      'pretty_version' => 'v6.6.3',
+      'version' => '6.6.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'baeb7cde6b60b1286912690ab0693c7789a31e71',
+      'reference' => '9400f305a898f194caff5521f64e5dfa926626f3',
     ),
     'smarty/smarty' => 
     array (
@@ -40,12 +40,12 @@
     ),
     'squizlabs/php_codesniffer' => 
     array (
-      'pretty_version' => '3.6.2',
-      'version' => '3.6.2.0',
+      'pretty_version' => '3.7.1',
+      'version' => '3.7.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '5e4e71592f69da17871dba6e80dd51bce74a351a',
+      'reference' => '1359e176e9307e906dc3d890bcc9603ff6d90619',
     ),
   ),
 );
