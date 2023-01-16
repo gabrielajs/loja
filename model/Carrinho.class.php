@@ -24,6 +24,7 @@ class Carrinho
                 'p_qtd' => $lista['QTD'],
                 'p_valor' => $lista['VALOR'],
                 'p_valor_br' => $lista['VALOR_BR'],
+                'p_peso' => $lista['PESO'],
                 'subTotal'   => Sistema::MoedaBR($subTotal),
                 'subTotalUs' => $subTotalUs
             );
@@ -40,10 +41,9 @@ class Carrinho
         return $this->totalValor;
     }
 
-    function peso()
-    {
-        return $this->peso;
-    }
+    function getTotalPeso() { 
+        return $this->totalPeso; 
+    } 
 
     function carrinhoADD($id)
     {
@@ -96,3 +96,4 @@ class Carrinho
         unset($_SESSION['PRO'][$id]);
     }
 }
+ 

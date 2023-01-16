@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-02-17 01:42:25
+/* Smarty version 3.1.39, created on 2022-08-17 02:52:55
   from 'C:\xampp\htdocs\loja_design\view\produtoInfo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_620d99f1845649_50675574',
+  'unifunc' => 'content_62fc3be7cd59d1_63053422',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8c2dd0f3461361042036ed86f750c6d2d37ddb1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\loja_design\\view\\produtoInfo.tpl',
-      1 => 1645058409,
+      1 => 1660697571,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d99f1845649_50675574 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62fc3be7cd59d1_63053422 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -61,7 +61,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <p><?php echo $_smarty_tpl->tpl_vars['P']->value['p_referencia'];?>
 </p>
                 <p><b class="font-p">R$<?php echo $_smarty_tpl->tpl_vars['P']->value['p_valor_br'];?>
-</b></p>
+</b>Peso:<?php echo $_smarty_tpl->tpl_vars['p_peso']->value;?>
+</p>
             </div>
             <hr />
             <div class="info-en">
