@@ -22,6 +22,7 @@
             <div class="info">
                 <p class="namep"><b>{$P.p_nome}</b></p>
                 <p>{$P.p_referencia}</p>
+                <p><b class="font-p">R${$P.p_valor_br}</b></p>
             </div>
             <hr />
             <div class="info-en">

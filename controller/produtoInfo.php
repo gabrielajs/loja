@@ -11,7 +11,6 @@ $imagem->getImagem(Rotas::$page[1]);
 $smarty->assign('PRO', $produto->getItens());
 $smarty->assign('IMG', $imagem->getItens());
 $smarty->assign('COMPRAR', Rotas::pageCarrinhoAlterar());
-$smarty->assign('PESO', $carrinho->getTotalPeso());
 
 if(isset($_POST['cep'])):
     $cep = $_POST['cep'];
