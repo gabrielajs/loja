@@ -50,9 +50,9 @@ class Login extends Conexao
 
     static function logado()
     {
-        if (isset($_SESSION['CLI']['c_id'])) :
+        if (isset($_SESSION['CLI']['c_id'])):
             return true;
-        else :
+        else:
             return false;
         endif;
     }

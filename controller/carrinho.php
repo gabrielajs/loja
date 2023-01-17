@@ -9,10 +9,6 @@ if ($_SESSION['PRO']) :
     $smarty->assign('COMPRAR', Rotas::pageCarrinhoAlterar());
     $smarty->assign('PEDIDO', Rotas::pageConfirmarPedido());  
     
-    $cliente = 1;
-    $sessao = $_SESSION['pedido'];
-    $cod = '123456';
-
     /* DEPOIS QUE O PEDIDO FOR SALVO A SESSÃO DO CARRINHO SERÁ LIMPA*/
     if($pedido->pedidoSalvar($cliente, $sessao, $cod)):
        $pedido->limparSessao(); 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-17 04:03:51
+/* Smarty version 3.1.39, created on 2023-01-16 22:50:12
   from 'C:\xampp\htdocs\loja_design\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616b84872bcd41_28315678',
+  'unifunc' => 'content_63c5fed441bca4_79791306',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616b84872bcd41_28315678 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63c5fed441bca4_79791306 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <div>
         <a href="#" class="link-primary">continuar comprando</a>

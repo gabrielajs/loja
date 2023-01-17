@@ -24,6 +24,7 @@ class Carrinho
                 'p_qtd' => $lista['QTD'],
                 'p_valor' => $lista['VALOR'],
                 'p_valor_br' => $lista['VALOR_BR'],
+                'p_peso' => $lista['PESO'],
                 'subTotal'   => Sistema::MoedaBR($subTotal),
                 'subTotalUs' => $subTotalUs
             );
@@ -40,10 +41,9 @@ class Carrinho
         return $this->totalValor;
     }
 
-    function peso()
-    {
-        return $this->peso;
-    }
+    function getTotalPeso() { 
+        return $this->totalPeso; 
+    } 
 
     function carrinhoADD($id)
     {
@@ -64,7 +64,8 @@ class Carrinho
 
         switch ($ACAO):
             case 'add':
-                if (!isset($_SESSION['PRO'][$ID]['ID'])) :
+
+                if(!isset($_SESSION['PRO'][$ID]['ID'])){
                     $_SESSION['PRO'][$ID]['ID'] = $ID;
                     $_SESSION['PRO'][$ID]['NOME'] = $NOME;
                     $_SESSION['PRO'][$ID]['VALOR'] = $VALOR;
@@ -73,9 +74,10 @@ class Carrinho
                     $_SESSION['PRO'][$ID]['IMG'] = $IMG;
                     $_SESSION['PRO'][$ID]['QTD'] = $QTD;
                     $_SESSION['PRO'][$ID]['LINK'] = $LINK;
-                else:
+                } else{
                     $_SESSION['PRO'][$ID]['QTD'] += $QTD;
-                endif;
+                }
+                
                     echo '<div class="alert alert-success" role="alert">Produto adicionando ao carrinho!</div>';
                 break;
 
@@ -96,3 +98,4 @@ class Carrinho
         unset($_SESSION['PRO'][$id]);
     }
 }
+ 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-17 04:03:45
+/* Smarty version 3.1.39, created on 2023-01-17 02:50:06
   from 'C:\xampp\htdocs\loja_design\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616b84813e0f00_34614544',
+  'unifunc' => 'content_63c5fece8a6c30_44084413',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:cabecalho-site.tpl' => 1,
   ),
 ),false)) {
-function content_616b84813e0f00_34614544 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63c5fece8a6c30_44084413 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 

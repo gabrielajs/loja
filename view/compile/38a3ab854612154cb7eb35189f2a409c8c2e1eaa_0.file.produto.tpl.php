@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-17 04:04:20
+/* Smarty version 3.1.39, created on 2023-01-17 02:50:06
   from 'C:\xampp\htdocs\loja_design\view\produto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616b84a4cc5dc3_63072143',
+  'unifunc' => 'content_63c5feceabcea7_12856527',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616b84a4cc5dc3_63072143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63c5feceabcea7_12856527 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h2>Produtos</h2>
 
 <?php if ($_smarty_tpl->tpl_vars['TOTAL']->value < 1) {?>
