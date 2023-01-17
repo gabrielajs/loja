@@ -8,15 +8,16 @@ if(!isset($_SESSION)):
     session_start();
 endif;
 
-/* TODA VEZ QUE CRIA UMA NOVA SESSÃO É CRIADO UM NOVO CÓDIGO*/
+/* TODA VEZ QUE CRIA UMA NOVA SESSÃO É CRIADO UM NOVO CÓDIGO
 if(!isset($_SESSION['pedido'])):
     $_SESSION['pedido'] = date('YmdHms');
-endif;
+endif;*/
 
 $smarty = new Template();
 $menu = new Menu();
 $configuracoes = new Configuracoes();
 $produto = new Produto();
+$login = new Login();
 
 $produto->bannerProdutos(); //sql que busca produto exibido no banner
 $menu->getMenu(); //sql que busca todos os menus
@@ -30,6 +31,7 @@ $smarty->assign('NOME_SITE', Rotas::getNomeSite()); //nome do site informado na 
 $smarty->assign('HOME', Rotas::getSiteHome()); //home do site informado na classe Config
 $smarty->assign('INFO_P', Rotas::pageProdutoInfo()); //ao clicar mostra detalhes do produtos
 $smarty->assign('LOGIN', Rotas::pageLogin()); //pagina de login
+$smarty->assign('LOGADO', Login::logado()); //cliente logado
 $smarty->assign('SAIR', Rotas::pageLogout()); 
 
 if(Login::logado()):
