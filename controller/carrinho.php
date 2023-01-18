@@ -1,4 +1,5 @@
 <?php
+
 if ($_SESSION['PRO']) :
     $smarty = new Template();
     $carrinho = new Carrinho();
@@ -9,10 +10,10 @@ if ($_SESSION['PRO']) :
     $smarty->assign('COMPRAR', Rotas::pageCarrinhoAlterar());
     $smarty->assign('PEDIDO', Rotas::pageConfirmarPedido());  
     
-    /* DEPOIS QUE O PEDIDO FOR SALVO A SESSÃO DO CARRINHO SERÁ LIMPA*/
+    /* DEPOIS QUE O PEDIDO FOR SALVO A SESSÃO DO CARRINHO SERÁ LIMPA
     if($pedido->pedidoSalvar($cliente, $sessao, $cod)):
        $pedido->limparSessao(); 
-    endif;
+    endif;*/
 else:
     echo '<div class="alert alert-secondary" role="alert">Carrinho vazio !</div>';
 endif;
